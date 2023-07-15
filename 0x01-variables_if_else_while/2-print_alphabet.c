@@ -1,20 +1,26 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - program starts here
+ * main - Entry point
  * Description: a program that prints the alphabet in lowercase
- * Return: Always 0
+ *
+ * Return: (0)
  */
 
 int main(void)
 {
-	char a, z;
-	alphabet = 'a';
+        int n;
 
-	while (alphabet <= 'z')
-	{
-		putchar("%c ", alphabet);
-		alphabet++;
-	}
-	return (0);
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+
+        for (n = 'a'; n <= 'z'; n++)
+        {
+                putchar(n);
+        }
+        putchar('\n');
+
+        return (0);
 }
