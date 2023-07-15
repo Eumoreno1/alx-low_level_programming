@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* 
+/**
  * main - Entry point of the program
- * Description - Positive anything is better than negative nothing
+ * Description: Positive anything is bettier than negative nothing
  * Return: Always 0
  */
 
